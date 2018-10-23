@@ -193,6 +193,21 @@ a.eolas{
 	color: #303030;
 }
 
+/*Institutions*/
+.foraisantaighde{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#boscanabhforas{
+	float: right;
+	margin-bottom: 30px;
+}
+
+.foras{
+	max-width: 234px;
+}
+
 /*Footer*/
 .ceartaighreiteach::after{
 	content: " ";
