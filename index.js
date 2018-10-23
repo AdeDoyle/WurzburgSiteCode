@@ -93,9 +93,10 @@ function epBody(data){
 // }
 
 
-// Insert date in footer
+// Insert date in footer and year in copyright claim
 function upDate(){
 	var footDate = document.getElementsByTagName('footer');
+	var copyDate = document.getElementById('coipcheart');
 	const monthNames = ["January", "February", "March", "April",
 		"May", "June", "July", "August", "September", "October",
 		"November", "December"];
@@ -104,6 +105,7 @@ function upDate(){
 	var thisMonth = monthNames[d.getMonth()]
 	var thisYear = d.getFullYear();
 	footDate[0].innerHTML = "<footer class=\"cos\">Adrian Doyle, <i>Würzburg Irish Glosses</i> (2018), &lt;www.wurzburg.ie> [accessed " + thisDay + " " + thisMonth + " " + thisYear + "]</footer>";
+	copyDate.innerHTML = "<p id=\"coipcheart\"><i>Copyright © " + thisYear + " National University of Ireland, Galway</i></p>";
 }
 
 
