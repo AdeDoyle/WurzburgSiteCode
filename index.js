@@ -71,7 +71,7 @@ function epBody(data){
 				epistList += "<ul id='" + glid + "' class='gluaiseannabileoige'><li class='uimhir'>" + glossNum + ".</li><li class='anghluais'>" + glossTxt + "</li></ul>";
 				epistList += "<div id='" + glid + "info' class='boscafaisneise'>";
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Page:</li><li class='line'>" + glossPage + ".</li></ul>";
-				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Line:</li><li class='line'>" + lineNum + ".</li></ul>";
+				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Verse:</li><li class='line'>" + lineNum + ".</li></ul>";
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Latin:</li><li class='anlaidin'><em>" + latLem + "</em></li></ul>";
 				epistList += "</div>";
 			}
