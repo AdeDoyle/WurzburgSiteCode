@@ -94,7 +94,7 @@ function upDate(){
 	var thisDay = d.getDate();
 	var thisMonth = monthNames[d.getMonth()]
 	var thisYear = d.getFullYear();
-	footDate[0].innerHTML = "<p>Adrian Doyle, <em>Würzburg Irish Glosses</em> (2018), &lt;www.wurzburg.ie> [accessed " + thisDay + " " + thisMonth + " " + thisYear + "]</p>";
+	footDate[0].innerHTML = "<p>Adrian Doyle, <em>Würzburg Irish Glosses</em> (2018), &lt;www.wuerzburg.ie> [accessed " + thisDay + " " + thisMonth + " " + thisYear + "]</p>";
 	copyDate.innerHTML = "<p id=\"coipcheart\"><em>Cóipcheart © " + thisYear + " Ollscoil na hÉireann, Gaillimh</em></p>";
 	copyDate.innerHTML = "<p id=\"coipcheart_Eng\"><em>Copyright © " + thisYear + " National University of Ireland, Galway</em></p>";
 }
