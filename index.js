@@ -79,10 +79,10 @@ function epBody(data){
 				var lat = glosses[k].latin;
 				var lem = glosses[k].lemma;
 				var lemLen = lem.length;
-				var lemStart = lat.indexOf(lem);
-				var lemEnd = lemStart + lemLen;
+				var lemPos = glosses[k].lemPos;
+				var lemEnd = parseInt(lemPos) + lemLen;
 				var blem = "<strong><u>" + lem + "</u></strong>";
-				var latLem = lat.substr(0, lemStart) + blem + lat.substr(lemEnd);
+				var latLem = lat.substr(0, lemPos) + blem + lat.substr(lemEnd);
 				epistList += "<ul id='" + glid + "' class='gluaiseannabileoige'><li class='uimhir'>" + glossNum + ".</li><li class='anghluais'>" + glossTxt + "</li></ul>";
 				epistList += "<div id='" + glid + "info' class='boscafaisneise'>";
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Page:</li><li class='line'>" + glossPage + ".</li></ul>";
