@@ -120,7 +120,7 @@ function epBody(data){
 function upDate(){
 	var footDate = document.getElementsByTagName('footer');
 	var copyDate = document.getElementById('coipcheart');
-	var copyDate = document.getElementById('coipcheart_Eng');
+	var copyDate_Eng = document.getElementById('coipcheart_Eng');
 	const monthNames = ["January", "February", "March", "April",
 		"May", "June", "July", "August", "September", "October",
 		"November", "December"];
@@ -130,7 +130,7 @@ function upDate(){
 	var thisYear = d.getFullYear();
 	footDate[0].innerHTML = "<p>Adrian Doyle, <em>Würzburg Irish Glosses</em> (2018), &lt;www.wuerzburg.ie> [accessed " + thisDay + " " + thisMonth + " " + thisYear + "]</p>";
 	copyDate.innerHTML = "<p id=\"coipcheart\"><em>Cóipcheart © " + thisYear + " Ollscoil na hÉireann, Gaillimh</em></p>";
-	copyDate.innerHTML = "<p id=\"coipcheart_Eng\"><em>Copyright © " + thisYear + " National University of Ireland, Galway</em></p>";
+	copyDate_Eng.innerHTML = "<p id=\"coipcheart_Eng\"><em>Copyright © " + thisYear + " National University of Ireland, Galway</em></p>";
 }
 
 
