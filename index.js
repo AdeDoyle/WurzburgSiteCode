@@ -42,7 +42,7 @@ function epSidebar(data){
 			epList += foId;
 		}
 	}
-	sideList.innerHTML = epList;
+	if (sideList !== null) {sideList.innerHTML = epList;}
 }
 
 
@@ -75,6 +75,7 @@ function epBody(data){
 				var glossTxt = glosses[k].glossText;
 				var glid = folIdSplit.join("") + glossNum;
 				var glossFNs = glosses[k].glossFNs;
+				var glossANs = glosses[k].newNotes;
 				var glossTrans = glosses[k].glossTrans;
 				var glossPage = glosses[k].tphPage;
 				var lineNum = glosses[k].latLine;
@@ -107,12 +108,17 @@ function epBody(data){
 						}
 					}
 				}
+				if (glossANs) {
+					epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Site Notes:</li><li class='line'>" + glossANs + "</li></ul>";
+				}
 				epistList += "</div>";
 			}
 		}
 	}
-	glossList.innerHTML = epistList;
-	attachEvents();
+	if (glossList !== null) {
+		glossList.innerHTML = epistList;
+		attachEvents();
+	}
 }
 
 
@@ -126,11 +132,11 @@ function upDate(){
 		"November", "December"];
 	var d = new Date();
 	var thisDay = d.getDate();
-	var thisMonth = monthNames[d.getMonth()]
+	var thisMonth = monthNames[d.getMonth()];
 	var thisYear = d.getFullYear();
 	footDate[0].innerHTML = "<p>Adrian Doyle, <em>Würzburg Irish Glosses</em> (2018), &lt;www.wuerzburg.ie> [accessed " + thisDay + " " + thisMonth + " " + thisYear + "]</p>";
-	copyDate.innerHTML = "<p id=\"coipcheart\"><em>Cóipcheart © " + thisYear + " Ollscoil na hÉireann, Gaillimh</em></p>";
-	copyDate_Eng.innerHTML = "<p id=\"coipcheart_Eng\"><em>Copyright © " + thisYear + " National University of Ireland, Galway</em></p>";
+	if (copyDate !== null) {copyDate.innerHTML = "<p id=\"coipcheart\"><em>Cóipcheart © " + thisYear + " Ollscoil na hÉireann, Gaillimh</em></p>";}
+	if (copyDate_Eng !== null) {copyDate_Eng.innerHTML = "<p id=\"coipcheart_Eng\"><em>Copyright © " + thisYear + " National University of Ireland, Galway</em></p>";}
 }
 
 
