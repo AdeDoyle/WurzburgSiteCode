@@ -7,4 +7,4 @@ As the site is under construction this code will be updated periodically
 
 The text of the Wurzburg Glosses was taken from Thesaurus Palaeohibernicus, Volume 1, with the permission of the Dublin Institute for Advanced Studies.
 
-The content of this database is the copyright of the National University of Ireland, Galway (NUIG) and is licenced for reuse under CC-BY 4.0.
+This database and its contents are the copyright of Adrian Doyle and the National University of Ireland, Galway (NUIG), and are licenced for reuse under CC-BY 4.0.
