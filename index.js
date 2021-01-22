@@ -109,6 +109,7 @@ function epBody(data){
 					}
 				}
 				if (glossANs) {
+					epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'><br></li><li class='line'blah><br></li></ul>";
 					epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Site Notes:</li><li class='line'>" + glossANs + "</li></ul>";
 				}
 				epistList += "</div>";
