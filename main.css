@@ -235,24 +235,43 @@ h2.wurzburg{
 	display: table-cell;
 }
 
-.anlaidin{
-	font-size: 0.85em;
-}
-
-.line{
-	font-size: 0.85em;
-}
 .faisneis{
 	font-size: 0.85em;
 	font-weight: bold;
 	text-align: left;
 	padding-right: 10px;
-	width: 75px;
+	min-width: 75px;
 }
 
-a.eolas{
-	text-decoration: none;
-	color: #303030;
+.line{
+	font-size: 0.85em;
+}
+
+.anlaidin{
+	font-size: 0.85em;
+}
+
+.faisneisfocail{
+	display: table;
+}
+
+.faisneisfocail li{
+	display: table-cell;
+}
+
+.toktitle{
+	font-size: 0.85em;
+	font-weight: bold;
+	text-align: left;
+	width: 33.33%;
+	min-width: 175px;
+}
+
+.tok, .head, .pos{
+	font-size: 0.85em;
+	text-align: left;
+	width: 33.33%;
+	min-width: 175px;
 }
 
 /*Institutions*/
