@@ -130,6 +130,10 @@ function epBody(data) {
 						tok_inst = "<em>" + tok_inst + "</em>";
 						tok_head = "";
 						tok_pos = "<strong>*Latin word</strong>";
+					} else if (tok_pos == "<Greek>") {
+						tok_inst = "<em>" + tok_inst + "</em>";
+						tok_head = "";
+						tok_pos = "<strong>*Greek word</strong>";
 					} else if (tok_pos == "<unknown>") {
 						tok_pos = "<strong>*missing POS</strong>";
 					}
