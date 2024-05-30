@@ -166,8 +166,8 @@ function upDate(){
 	var thisMonth = monthNames[d.getMonth()];
 	var thisYear = d.getFullYear();
 	footDate[0].innerHTML = "<p>Adrian Doyle, <em>Würzburg Irish Glosses</em> (2018), &lt;www.wuerzburg.ie> [accessed " + thisDay + " " + thisMonth + " " + thisYear + "]</p>";
-	if (copyDate !== null) {copyDate.innerHTML = "<p id=\"coipcheart\"><em>Cóipcheart © " + thisYear + " Ollscoil na hÉireann, Gaillimh</em></p>";}
-	if (copyDate_Eng !== null) {copyDate_Eng.innerHTML = "<p id=\"coipcheart_Eng\"><em>Copyright © " + thisYear + " National University of Ireland, Galway</em></p>";}
+	if (copyDate !== null) {copyDate.innerHTML = "<p id=\"coipcheart\"><em>Cóipcheart © " + thisYear + " Adrian Ó Dubhghaill</em></p>";}
+	if (copyDate_Eng !== null) {copyDate_Eng.innerHTML = "<p id=\"coipcheart_Eng\"><em>Copyright © " + thisYear + " Adrian Doyle</em></p>";}
 }
 
 
