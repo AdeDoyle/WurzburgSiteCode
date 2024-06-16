@@ -86,7 +86,7 @@ function epBody(data) {
 				var lemEnd = parseInt(lemPos) + lemLen;
 				var blem = "<strong><u>" + lem + "</u></strong>";
 				var latLem = lat.substr(0, lemPos) + blem + lat.substr(lemEnd);
-				var tokens = glosses[k].glossTokens2;
+				var tokens = glosses[k].glossTokens;
 				epistList += "<ul id='" + glid + "' class='gluaiseannabileoige'><li class='uimhir'>" + glossNum + ".</li><li class='anghluais'>" + glossTxt + "</li></ul>";
 				epistList += "<div id='" + glid + "info' class='boscafaisneise'>";
 				if (glossFNs.includes("<sup>")) {
