@@ -95,11 +95,13 @@ function epBody(data) {
 					epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Gloss:</li><li class='line'>" + glossFNs + "</li></ul>";
 				}
 				if (newGloss) {
-				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>New Reading:</li><li class='line'>" + newGloss + "</li></ul>";
+				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>New</li><li class='line'><br></li></ul>";
+				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Reading:</li><li class='line'>" + newGloss + "</li></ul>";
 				}
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Translation:</li><li class='line'>" + glossTrans + "</li></ul>";
 				if (newTrans) {
-				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>New Translation:</li><li class='line'>" + newTrans + "</li></ul>";
+				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>New</li><li class='line'><br></li></ul>";
+				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Translation:</li><li class='line'>" + newTrans + "</li></ul>";
 				}
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Scribe:</li><li class='line'>" + glossHand + "</li></ul>";
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Page:</li><li class='line'>" + glossPage + ".</li></ul>";
