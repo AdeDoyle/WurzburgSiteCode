@@ -74,9 +74,11 @@ function epBody(data) {
 				var glossNum = glosses[k].glossNo;
 				var glossTxt = glosses[k].glossText;
 				var glid = folIdSplit.join("") + glossNum;
+				var newGloss = glosses[k].newGloss;
 				var glossFNs = glosses[k].glossFNs;
 				var glossANs = glosses[k].newNotes;
 				var glossTrans = glosses[k].glossTrans;
+				var newTrans = glosses[k].newTrans;
 				var glossPage = glosses[k].tphPage;
 				var lineNum = glosses[k].latLine;
 				var lat = glosses[k].latin;
@@ -92,7 +94,13 @@ function epBody(data) {
 				if (glossFNs.includes("<sup>")) {
 					epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Gloss:</li><li class='line'>" + glossFNs + "</li></ul>";
 				}
+				if (newGloss) {
+				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>New Reading:</li><li class='line'>" + newGloss + "</li></ul>";
+				}
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Translation:</li><li class='line'>" + glossTrans + "</li></ul>";
+				if (newTrans) {
+				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>New Translation:</li><li class='line'>" + newTrans + "</li></ul>";
+				}
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Scribe:</li><li class='line'>" + glossHand + "</li></ul>";
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Page:</li><li class='line'>" + glossPage + ".</li></ul>";
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Verse Info:</li><li class='line'>" + lineNum + ".</li></ul>";
