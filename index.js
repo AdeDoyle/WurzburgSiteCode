@@ -9,26 +9,33 @@ function processJSON(){
 	var epRequest = new XMLHttpRequest();
 	epRequest.open('GET', 'glosses.json');
 	epRequest.onload = function() {
-	var epResponse = epRequest.responseText;
-	var epistles = JSON.parse(epResponse);
-	epSidebar(epistles);
-	epBody(epistles);
+		var epResponse = epRequest.responseText;
+		var epistles = JSON.parse(epResponse);
+		var lexRequest = new XMLHttpRequest();
+		lexRequest.open('GET', 'OI_lexicon.json');
+		lexRequest.onload = function() {
+			var lexResponse = lexRequest.responseText;
+			var lexicon = JSON.parse(lexResponse);
+			epSidebar(epistles);
+			epBody(epistles, lexicon);
+		};
+		lexRequest.send();
 	};
 	epRequest.send();
 }
 
 
 // Insert Epistles in sidebar
-function epSidebar(data){
+function epSidebar(ep_data){
 	var epList = "";
 	var epCount = 1;
 	var curFol = "start";
-	for (i=0; i<data.length; i++){
-		var epName = data[i].epistle;
+	for (i=0; i<ep_data.length; i++){
+		var epName = ep_data[i].epistle;
 		var classFinder = "<li><a class='litir' href='#epist" + epCount + "'>" + epCount + ". " + epName + "</a></li>";
 		epList += classFinder;
 		epCount++;
-		var fols = data[i].folios;
+		var fols = ep_data[i].folios;
 		for (j=0; j<fols.length; j++){
 			var foName = fols[j].folio;
 			var foIdSplit = foName.split(" ");
@@ -47,16 +54,16 @@ function epSidebar(data){
 
 
 // Insert Glosses in body
-function epBody(data) {
+function epBody(ep_data, lex_data) {
 	var epistList = "";
 	var epistCount = 1;
 	var curFo = "start";
-	for (i=0; i<data.length; i++) {
-		var epistName = data[i].epistle;
+	for (i=0; i<ep_data.length; i++) {
+		var epistName = ep_data[i].epistle;
 		var setId = "<h2 id='epist" + epistCount + "'>" + epistName + "</h2>";
 		epistList += setId;
 		epistCount++;
-		var fols = data[i].folios;
+		var fols = ep_data[i].folios;
 		for (j=0; j<fols.length; j++) {
 			var folName = fols[j].folio;
 			var folIdSplit = folName.split(" ");
@@ -146,6 +153,12 @@ function epBody(data) {
 						tok_pos = "<strong>*Greek word</strong>";
 					} else if (tok_pos == "<unknown>") {
 						tok_pos = "<strong>*missing POS</strong>";
+					} else {
+						var pos_lemmata = lex_data[tok_pos];
+						var lemma_id = pos_lemmata[tok_head];
+						if (lemma_id !== null) {
+							tok_head = "<a href='https://dil.ie/" + lemma_id + "' target='_blank'>" + tok_head + "</a>";
+						}
 					}
 					if (tok_head == "<unknown>") {
 						tok_head = "<strong>*missing headword</strong>";
