@@ -58,6 +58,9 @@ function epBody(ep_data, lex_data) {
 	var epistList = "";
 	var epistCount = 1;
 	var curFo = "start";
+	var curFoNum = "0";
+	var curFoLet = "x";
+	var facsLink = "https://titus.fkidg1.uni-frankfurt.de/texte/celtica/wbgl/wbgl";
 	for (i=0; i<ep_data.length; i++) {
 		var epistName = ep_data[i].epistle;
 		var setId = "<h2 id='epist" + epistCount + "'>" + epistName + "</h2>";
@@ -67,12 +70,19 @@ function epBody(ep_data, lex_data) {
 		for (j=0; j<fols.length; j++) {
 			var folName = fols[j].folio;
 			var folIdSplit = folName.split(" ");
-			var checkFo = folIdSplit.join("")
+			var checkFo = folIdSplit.join("");
 			if (!(checkFo == curFo)) {
 				curFo = checkFo;
-				var folId = "<h3 id='fol" + checkFo + ".1'>" + folName + "</h3>";
+				curFoNum = (parseInt(curFo.slice(2, -1))).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false});
+				curFoLet = curFo.slice(-1);
+				if (['a', 'b'].includes(curFoLet)) {
+					curFoLet = "r";
+				}else{
+					curFoLet = "v";
+				}
+				var folId = "<h3 id='fol" + checkFo + ".1'><a href='" + facsLink + curFoNum + curFoLet + ".jpg' target='_blank'>" + folName + "</a></h3>";
 			}else{
-				var folId = "<h3 id='fol" + checkFo + ".2'>" + folName + "</h3>";
+				var folId = "<h3 id='fol" + checkFo + ".2'><a href='" + facsLink + curFoNum + curFoLet + ".jpg' target='_blank'>" + folName + "</a></h3>";
 			}
 			epistList += folId;
 			var glosses = fols[j].glosses;
@@ -156,6 +166,9 @@ function epBody(ep_data, lex_data) {
 					} else {
 						var pos_lemmata = lex_data[tok_pos];
 						var lemma_id = pos_lemmata[tok_head];
+						if (Array.isArray(lemma_id)) {
+							lemma_id = lemma_id[0]
+						}
 						if (lemma_id !== null) {
 							tok_head = "<a href='https://dil.ie/" + lemma_id + "' target='_blank'>" + tok_head + "</a>";
 						}
