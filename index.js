@@ -1,7 +1,8 @@
 
-// Create variables for the containers into which the sidebar and glosses will be put
+// Create variables for the containers into which the sidebar, glosses and lexicon will be put
 var sideList = document.getElementById('faighleathanach');
 var glossList = document.getElementById('gluaiseanna');
+var lexiconList = document.getElementById('focloir');
 
 
 // Get JSON data from file and call functions to insert it into the HTML code
@@ -22,6 +23,14 @@ function processJSON(){
 		lexRequest.send();
 	};
 	epRequest.send();
+	var lookupRequest = new XMLHttpRequest();
+	lookupRequest.open('GET', 'lex_lookup.json');
+	lookupRequest.onload = function() {
+		var lookupResponse = lookupRequest.responseText;
+		var lookup = JSON.parse(lookupResponse);
+		lexBody(lookup);
+	};
+	lookupRequest.send();
 }
 
 
@@ -148,7 +157,7 @@ function epBody(ep_data, lex_data) {
 					var tok_inst = token[0];
 					var tok_head = token[2];
 					var tok_pos = token[1];
-					var tok_num = l + 1
+					var tok_num = l + 1;
 					if (tok_pos == "<Latin>") {
 						tok_inst = "<em>" + tok_inst + "</em>";
 						tok_head = "";
@@ -167,7 +176,7 @@ function epBody(ep_data, lex_data) {
 						var pos_lemmata = lex_data[tok_pos];
 						var lemma_id = pos_lemmata[tok_head];
 						if (Array.isArray(lemma_id)) {
-							lemma_id = lemma_id[0]
+							lemma_id = lemma_id[0];
 						}
 						if (lemma_id !== null) {
 							tok_head = "<a href='https://dil.ie/" + lemma_id + "' target='_blank'>" + tok_head + "</a>";
@@ -185,6 +194,41 @@ function epBody(ep_data, lex_data) {
 	if (glossList !== null) {
 		glossList.innerHTML = epistList;
 		attachEvents();
+	}
+}
+
+
+// Insert lemmata in lexicon
+function lexBody(lex_data){
+	var lexList = "";
+	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'><br></li><li class='lextitle'><br></li><li class='lextitle'><br></li></ul>";
+	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'>POS-tags</li><li class='lextitle'>Forms</li><li class='lextitle'>Glosses</li></ul>";
+	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'><br></li><li class='lextitle'><br></li><li class='lextitle'><br></li></ul>";
+	for (i=0; i<lex_data.length; i++) {
+		var lemData = lex_data[i];
+		var lemma = lemData[0];
+		var pos_tag = lemData[2];
+		var eDIL_id = lemData[1];
+		var lemGlosses = lemData[3];
+		var lemGlossesStr = "";
+		for (j=0; j<lemGlosses.length; j++) {
+			lemGlossesStr += lemGlosses[j] + ", ";
+		}
+		var lemTokForms = lemData[4];
+		var lemToks = "";
+		for (k=0; k<lemTokForms.length; k++) {
+			lemToks += lemTokForms[k][0] + ", ";
+		}
+		if (eDIL_id) {
+			var dilLink = "<a href='https://dil.ie/" + eDIL_id + "' target='_blank'>eDIL</a>";
+		} else {
+			var dilLink = "";
+		}
+		
+		lexList += "<ul class='faisneisfocail'><li class='leama'>" + lemma + "</li><li class='edil'>" + dilLink + "</li><li class='lexpos'>" + pos_tag + "</li><li class='lexforms'>" + lemToks + "</li><li class='lexglosses'>" + lemGlossesStr + "</li></ul>";
+	}
+	if (lexiconList !== null) {
+		lexiconList.innerHTML = lexList;
 	}
 }
 
@@ -209,7 +253,7 @@ function upDate(){
 
 // Allows toggling of gloss info box for each gloss
 function attachEvents(){
-	let outerUL = document.querySelectorAll('.gluaiseannabileoige')
+	let outerUL = document.querySelectorAll('.gluaiseannabileoige');
 
 	function handleClick() {
     	this.classList.toggle('open');

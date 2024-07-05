@@ -274,6 +274,46 @@ h2.wurzburg{
 	min-width: 175px;
 }
 
+.leama{
+	font-size: 0.85em;
+	font-weight: bold;
+	text-align: left;
+	padding-right: 10px;
+	min-width: 75px;
+}
+
+.lexpostitle{
+	font-size: 0.85em;
+	font-weight: bold;
+	text-align: left;
+	width: 10%;
+	min-width: 35px;
+}
+
+.lextitle{
+	font-size: 0.85em;
+	font-weight: bold;
+	text-align: left;
+	width: 35%;
+	min-width: 175px;
+}
+
+.edil, .lexpos{
+	font-size: 0.85em;
+	text-align: left;
+	width: 10%;
+	min-width: 35px;
+}
+
+.lexforms, .lexglosses{
+	font-size: 0.85em;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-right: 15px;
+	width: 35%;
+	min-width: 175px;
+}
+
 /*Institutions*/
 .foraisantaighde{
 	max-width: 1200px;
