@@ -176,9 +176,15 @@ function epBody(ep_data, lex_data) {
 						var pos_lemmata = lex_data[tok_pos];
 						var lemma_id = pos_lemmata[tok_head];
 						if (Array.isArray(lemma_id)) {
-							lemma_id = lemma_id[0];
-						}
-						if (lemma_id !== null) {
+							var tok_head_combo = "";
+							for (m=0; m<lemma_id.length; m++) {
+								tok_head_combo += "<a href='https://dil.ie/" + lemma_id[m] + "' target='_blank'>" + tok_head + " " + (m + 1) + "</a>";
+								if (m+1<lemma_id.length) {
+									tok_head_combo += " / ";
+								}
+							}
+							tok_head = tok_head_combo;
+						} else if (typeof lemma_id == "number") {
 							tok_head = "<a href='https://dil.ie/" + lemma_id + "' target='_blank'>" + tok_head + "</a>";
 						}
 					}
@@ -222,7 +228,7 @@ function lexBody(lex_data){
 		if (eDIL_id) {
 			if (typeof eDIL_id == "number") {
 				var dilLink = "<a href='https://dil.ie/" + eDIL_id + "' target='_blank'>eDIL</a>";
-			} else {
+			} else if (Array.isArray(eDIL_id)) {
 				var dilLink = "<a href='https://dil.ie/" + eDIL_id[0] + "' target='_blank'>eDIL 1</a><br><br><em>Also:</em><br>";
 				for (l=1; l<eDIL_id.length; l++) {
 					dilLink += "<a href='https://dil.ie/" + eDIL_id[l] + "' target='_blank'>eDIL " + (l + 1) + "</a><br>";
