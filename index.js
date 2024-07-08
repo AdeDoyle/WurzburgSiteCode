@@ -220,7 +220,15 @@ function lexBody(lex_data){
 			lemToks += lemTokForms[k][0] + ", ";
 		}
 		if (eDIL_id) {
-			var dilLink = "<a href='https://dil.ie/" + eDIL_id + "' target='_blank'>eDIL</a>";
+			if (typeof eDIL_id == "number") {
+				var dilLink = "<a href='https://dil.ie/" + eDIL_id + "' target='_blank'>eDIL</a>";
+			} else {
+				var dilLink = "<a href='https://dil.ie/" + eDIL_id[0] + "' target='_blank'>eDIL 1</a><br><br><em>Also:</em><br>";
+				for (l=1; l<eDIL_id.length; l++) {
+					dilLink += "<a href='https://dil.ie/" + eDIL_id[l] + "' target='_blank'>eDIL " + (l + 1) + "</a><br>";
+				}
+				dilLink += "<br>";
+			}
 		} else {
 			var dilLink = "";
 		}
