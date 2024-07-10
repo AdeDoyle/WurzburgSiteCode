@@ -156,6 +156,10 @@ function epBody(ep_data, lex_data) {
 					var token = tokens[l];
 					var tok_inst = token[0];
 					var tok_head = token[2];
+					if (tok_head.includes("_")) {
+						let num_ind = tok_head.indexOf("_");
+						tok_head = tok_head.slice(0, num_ind);
+					}
 					var tok_pos = token[1];
 					var tok_num = l + 1;
 					if (tok_pos == "<Latin>") {
@@ -178,7 +182,7 @@ function epBody(ep_data, lex_data) {
 						if (Array.isArray(lemma_id)) {
 							var tok_head_combo = "";
 							for (m=0; m<lemma_id.length; m++) {
-								tok_head_combo += "<a href='https://dil.ie/" + lemma_id[m] + "' target='_blank'>" + tok_head + " " + (m + 1) + "</a>";
+								tok_head_combo += "<a href='https://dil.ie/" + lemma_id[m] + "' target='_blank'>" + tok_head + " (" + (m + 1) + ")</a>";
 								if (m+1<lemma_id.length) {
 									tok_head_combo += " / ";
 								}
@@ -208,38 +212,47 @@ function epBody(ep_data, lex_data) {
 function lexBody(lex_data){
 	var lexList = "";
 	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'><br></li><li class='lextitle'><br></li><li class='lextitle'><br></li></ul>";
-	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'>POS-tags</li><li class='lextitle'>Forms</li><li class='lextitle'>Glosses</li></ul>";
+	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'>POS-tag</li><li class='lextitle'>Forms</li><li class='lextitle'>Glosses</li></ul>";
 	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'><br></li><li class='lextitle'><br></li><li class='lextitle'><br></li></ul>";
 	for (i=0; i<lex_data.length; i++) {
 		var lemData = lex_data[i];
 		var lemma = lemData[0];
+		if (lemma.includes("_")) {
+			let num_ind = lemma.indexOf("_");
+			lemma = lemma.slice(0, num_ind);
+		}
 		var pos_tag = lemData[2];
 		var eDIL_id = lemData[1];
 		var lemGlosses = lemData[3];
 		var lemGlossesStr = "";
 		for (j=0; j<lemGlosses.length; j++) {
-			lemGlossesStr += lemGlosses[j] + ", ";
+			lemGlossesStr += lemGlosses[j];
+			if (j < (lemGlosses.length - 1)) {
+				lemGlossesStr += ", ";
+			}
 		}
 		var lemTokForms = lemData[4];
 		var lemToks = "";
 		for (k=0; k<lemTokForms.length; k++) {
-			lemToks += lemTokForms[k][0] + ", ";
+			lemToks += lemTokForms[k][0];
+			if (k < (lemTokForms.length - 1)) {
+				 lemToks += ", ";
+			}
 		}
 		if (eDIL_id) {
 			if (typeof eDIL_id == "number") {
 				var dilLink = "<a href='https://dil.ie/" + eDIL_id + "' target='_blank'>eDIL</a>";
 			} else if (Array.isArray(eDIL_id)) {
-				var dilLink = "<a href='https://dil.ie/" + eDIL_id[0] + "' target='_blank'>eDIL 1</a><br><br><em>Also:</em><br>";
+				var dilLink = "<a href='https://dil.ie/" + eDIL_id[0] + "' target='_blank'>eDIL (1)</a><br><br><em><strong>See<br>Also:</strong></em><br>";
 				for (l=1; l<eDIL_id.length; l++) {
-					dilLink += "<a href='https://dil.ie/" + eDIL_id[l] + "' target='_blank'>eDIL " + (l + 1) + "</a><br>";
+					dilLink += "<a href='https://dil.ie/" + eDIL_id[l] + "' target='_blank'>eDIL (" + (l + 1) + ")</a><br>";
 				}
 				dilLink += "<br>";
 			}
 		} else {
 			var dilLink = "";
 		}
-		
-		lexList += "<ul class='faisneisfocail'><li class='leama'>" + lemma + "</li><li class='edil'>" + dilLink + "</li><li class='lexpos'>" + pos_tag + "</li><li class='lexforms'>" + lemToks + "</li><li class='lexglosses'>" + lemGlossesStr + "</li></ul>";
+		lexList += "<ul class='faisneisfocail'><li class='leama'>" + lemma + "</li><li class='edil'>" + dilLink + "</li><li class='lexpos'>" + pos_tag + "</li><li class='lexforms'>" + lemToks + "<br><br></li><li class='lexglosses'>" + lemGlossesStr + "<br><br></li></ul>";
 	}
 	if (lexiconList !== null) {
 		lexiconList.innerHTML = lexList;
