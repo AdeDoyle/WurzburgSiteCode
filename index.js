@@ -156,10 +156,6 @@ function epBody(ep_data, lex_data) {
 					var token = tokens[l];
 					var tok_inst = token[0];
 					var tok_head = token[2];
-					if (tok_head.includes("_")) {
-						let num_ind = tok_head.indexOf("_");
-						tok_head = tok_head.slice(0, num_ind);
-					}
 					var tok_pos = token[1];
 					var tok_num = l + 1;
 					if (tok_pos == "<Latin>") {
@@ -179,6 +175,10 @@ function epBody(ep_data, lex_data) {
 					} else {
 						var pos_lemmata = lex_data[tok_pos];
 						var lemma_id = pos_lemmata[tok_head];
+						if (tok_head.includes("_")) {
+							let num_ind = tok_head.indexOf("_");
+							tok_head = tok_head.slice(0, num_ind);
+						}
 						if (Array.isArray(lemma_id)) {
 							var tok_head_combo = "";
 							for (m=0; m<lemma_id.length; m++) {
