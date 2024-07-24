@@ -118,12 +118,14 @@ function epBody(ep_data, lex_data) {
 				epistList += "<ul id='" + glid + "' class='gluaiseannabileoige'><li class='uimhir'>" + glossNum + ".</li><li class='anghluais'>" + glossTxt + "</li></ul>";
 				epistList += "<div id='" + glid + "info' class='boscafaisneise'>";
 				if (glossFNs.includes("<sup>")) {
-					epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Gloss:</li><li class='line'>" + glossFNs + "</li></ul>";
+					epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Gloss +</li><li class='line'><br></li></ul>";
+					epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Footnotes:</li><li class='line'>" + glossFNs + "</li></ul>";
 				}
 				if (newGloss) {
 				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>New</li><li class='line'><br></li></ul>";
 				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Reading:</li><li class='line'>" + newGloss + "</li></ul>";
 				}
+				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>TPH</li><li class='line'><br></li></ul>";
 				epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>Translation:</li><li class='line'>" + glossTrans + "</li></ul>";
 				if (newTrans) {
 				    epistList += "<ul class='faisneisgluaiseanna'><li class='faisneis'>New</li><li class='line'><br></li></ul>";
