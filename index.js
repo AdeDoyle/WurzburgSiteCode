@@ -3,6 +3,7 @@
 var sideList = document.getElementById('faighleathanach');
 var glossList = document.getElementById('gluaiseanna');
 var lexiconList = document.getElementById('focloir');
+var fullLexData = [];
 
 
 // Get JSON data from file and call functions to insert it into the HTML code
@@ -28,9 +29,66 @@ function processJSON(){
 	lookupRequest.onload = function() {
 		var lookupResponse = lookupRequest.responseText;
 		var lookup = JSON.parse(lookupResponse);
-		lexBody(lookup);
+		fullLexData = lookup;
+		createAlphabetBar();
+		lexBody(fullLexData, "a");
 	};
 	lookupRequest.send();
+}
+
+
+// Generate Alphabet Bar for Dictionary
+function createAlphabetBar() {
+	var bar = document.getElementById("barra_aibitre");
+	if (!bar) return;
+	var letterSet = new Set();
+	var hasMisc = false;
+	var accents = new Set(["á", "é", "í", "ó", "ú"]);
+	for (let i = 0; i < fullLexData.length; i++) {
+		var lemma = fullLexData[i][0];
+		if (lemma.includes("_")) {
+			lemma = lemma.slice(0, lemma.indexOf("_"));
+		}
+		if (!lemma || lemma.length === 0) continue;
+		var firstChar = lemma.charAt(0).toLowerCase();
+		var normalized = firstChar;
+		if (firstChar === "á") normalized = "a";
+		else if (firstChar === "é") normalized = "e";
+		else if (firstChar === "í") normalized = "i";
+		else if (firstChar === "ó") normalized = "o";
+		else if (firstChar === "ú") normalized = "u";
+		if (normalized >= "a" && normalized <= "z") {
+			letterSet.add(normalized);
+		} else {
+			hasMisc = true;
+		}
+	}
+	var letters = Array.from(letterSet).sort();
+	var html = "";
+	for (let letter of letters) {
+		html += `<span data-letter="${letter}">${letter.toUpperCase()}</span>`;
+		if (letter === "a") html += `<span data-letter="á">Á</span>`;
+		if (letter === "e") html += `<span data-letter="é">É</span>`;
+		if (letter === "i") html += `<span data-letter="í">Í</span>`;
+		if (letter === "o") html += `<span data-letter="ó">Ó</span>`;
+		if (letter === "u") html += `<span data-letter="ú">Ú</span>`;
+	}
+	if (hasMisc) {
+		html += `<span data-letter="misc">MISC.</span>`;
+	}
+	bar.innerHTML = html;
+	let buttons = bar.querySelectorAll("span");
+	buttons.forEach(btn => {
+		btn.addEventListener("click", function () {
+			let selected = this.getAttribute("data-letter");
+			buttons.forEach(b => b.classList.remove("active"));
+			this.classList.add("active");
+			lexBody(fullLexData, selected);
+		});
+	});
+	if (buttons.length > 0) {
+		buttons[0].classList.add("active");
+	}
 }
 
 
@@ -211,7 +269,7 @@ function epBody(ep_data, lex_data) {
 
 
 // Insert lemmata in lexicon
-function lexBody(lex_data){
+function lexBody(lex_data, filterLetter = "a"){
 	var lexList = "";
 	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'><br></li><li class='lextitle'><br></li><li class='lextitle'><br></li></ul>";
 	lexList += "<ul class='faisneisfocail'><li class='leama'></li><li class='lexpostitle'><br></li><li class='lexpostitle'>POS-tag</li><li class='lextitle'>Forms</li><li class='lextitle'>Glosses</li></ul>";
@@ -222,6 +280,23 @@ function lexBody(lex_data){
 		if (lemma.includes("_")) {
 			let num_ind = lemma.indexOf("_");
 			lemma = lemma.slice(0, num_ind);
+		}
+		var firstChar = lemma.charAt(0).toLowerCase();
+		var accents = new Set(["á", "é", "í", "ó", "ú"]);
+		if (filterLetter === "misc") {
+			if ((firstChar >= "a" && firstChar <= "z") || accents.has(firstChar)) {
+				continue;
+			}
+		}
+		else if (accents.has(filterLetter)) {
+			if (firstChar !== filterLetter) {
+				continue;
+			}
+		}
+		else {
+			if (firstChar !== filterLetter) {
+				continue;
+			}
 		}
 		var pos_tag = lemData[2];
 		var eDIL_id = lemData[1];
