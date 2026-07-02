@@ -355,7 +355,13 @@
                                 null
                             ],
                             [
-                                "rocretsi",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "cretsi",
                                 "VERB",
                                 "creitid",
                                 null
@@ -439,7 +445,13 @@
                                 null
                             ],
                             [
-                                "rocreitset",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "creitset",
                                 "VERB",
                                 "creitid",
                                 null
@@ -975,7 +987,13 @@
                                 null
                             ],
                             [
-                                "rotectsat",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "tectsat",
                                 "VERB",
                                 "techtaid",
                                 null
@@ -5208,7 +5226,7 @@
                             [
                                 "predchim",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -7459,7 +7477,7 @@
                             ],
                             [
                                 "huili",
-                                "ADJ",
+                                "NOUN",
                                 "uile",
                                 null
                             ]
@@ -10106,7 +10124,13 @@
                                 null
                             ],
                             [
-                                "rofírianiged",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "fírianiged",
                                 "VERB",
                                 "fírianigidir",
                                 null
@@ -10280,7 +10304,13 @@
                                 null
                             ],
                             [
-                                "ronóibad",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "nóibad",
                                 "VERB",
                                 "noíbaid",
                                 null
@@ -10625,7 +10655,13 @@
                                 "Polarity=Neg|PronType=Int"
                             ],
                             [
-                                "ronóibad",
+                                "ro",
+                                "PART",
+                                "ro",
+                                "PartType=Aug"
+                            ],
+                            [
+                                "nóibad",
                                 "VERB",
                                 "noíbaid",
                                 "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Pass"
@@ -11067,7 +11103,13 @@
                                 null
                             ],
                             [
-                                "rofirianiged",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "firianiged",
                                 "VERB",
                                 "fírianigidir",
                                 null
@@ -11642,7 +11684,13 @@
                                 null
                             ],
                             [
-                                "rochomalnisset",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "chomalnisset",
                                 "VERB",
                                 "comalnaithir",
                                 null
@@ -12309,7 +12357,13 @@
                                 null
                             ],
                             [
-                                "rogab",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "gab",
                                 "VERB",
                                 "gaibid",
                                 null
@@ -12387,7 +12441,13 @@
                                 "Gender=Neut|Number=Sing|Person=3|PronType=Prs"
                             ],
                             [
-                                "rogab",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "gab",
                                 "VERB",
                                 "gaibid",
                                 null
@@ -13295,7 +13355,13 @@
                                 "Number=Plur|Person=1|PronType=Emp"
                             ],
                             [
-                                "roscríbad",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "scríbad",
                                 "VERB",
                                 "scríbaid",
                                 null
@@ -49398,7 +49464,13 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "rogabad",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "gabad",
                                 "VERB",
                                 "gaibid",
                                 null
@@ -52825,7 +52897,7 @@
                             [
                                 "pridchither",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -53730,7 +53802,19 @@
                                 null
                             ],
                             [
-                                "rodfóidi",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "d",
+                                "PRON",
+                                "id_2",
+                                "Gender=Neut|Number=Sing|Person=3|PronClass=C|PronType=Prs"
+                            ],
+                            [
+                                "fóidi",
                                 "VERB",
                                 "foídid",
                                 null
@@ -53875,9 +53959,15 @@
                                 null
                             ],
                             [
-                                "ropridchad",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "pridchad",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -53956,7 +54046,7 @@
                             ],
                             [
                                 "uile",
-                                "ADJ",
+                                "NOUN",
                                 "uile",
                                 null
                             ]
@@ -54509,7 +54599,13 @@
                                 null
                             ],
                             [
-                                "rurádi",
+                                "ru",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "rádi",
                                 "VERB",
                                 "rádid",
                                 null
@@ -54796,7 +54892,7 @@
                             ],
                             [
                                 "uili",
-                                "ADJ",
+                                "NOUN",
                                 "uile",
                                 null
                             ],
@@ -80503,7 +80599,7 @@
                             ],
                             [
                                 "huili",
-                                "ADJ",
+                                "NOUN",
                                 "uile",
                                 null
                             ],
@@ -93410,7 +93506,7 @@
                             [
                                 "praidchas",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ]
                         ],
@@ -107706,7 +107802,13 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "roslogeth",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "slogeth",
                                 "VERB",
                                 "slucid",
                                 null
@@ -137499,7 +137601,13 @@
                         "glossText": "rulaimur",
                         "glossTokens": [
                             [
-                                "rulaimur",
+                                "ru",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "laimur",
                                 "VERB",
                                 "rolaimethar",
                                 null
@@ -143073,7 +143181,7 @@
                             [
                                 "pridchimme",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -143279,7 +143387,7 @@
                             [
                                 "pridchinn",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ]
                         ],
@@ -146413,7 +146521,13 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "ropridchad",
+                                "ro",
+                                "PART",
+                                "ro",
+                                "PartType=Aug"
+                            ],
+                            [
+                                "pridchad",
                                 "VERB",
                                 "pridchaid",
                                 "Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Pass"
@@ -166860,7 +166974,7 @@
                             [
                                 "priched",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ]
                         ],
@@ -167654,7 +167768,7 @@
                             [
                                 "pridchid",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -167710,7 +167824,7 @@
                             [
                                 "pridched",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -178375,7 +178489,13 @@
                                 null
                             ],
                             [
-                                "rombá",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "mbá",
                                 "VERB",
                                 "attá",
                                 null
@@ -180247,7 +180367,7 @@
                             [
                                 "pridchissid",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -180295,7 +180415,7 @@
                             [
                                 "pridchissem",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -189232,7 +189352,7 @@
                             ],
                             [
                                 "uili",
-                                "ADJ",
+                                "NOUN",
                                 "uile",
                                 null
                             ],
@@ -189633,7 +189753,13 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "rocreitsid",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "creitsid",
                                 "VERB",
                                 "creitid",
                                 null
@@ -189705,7 +189831,13 @@
                                 null
                             ],
                             [
-                                "roerbad",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "erbad",
                                 "VERB",
                                 "erbaid",
                                 null
@@ -190168,7 +190300,7 @@
                             ],
                             [
                                 "uili",
-                                "ADJ",
+                                "NOUN",
                                 "uile",
                                 null
                             ],
@@ -191154,7 +191286,7 @@
                             [
                                 "pridchibid",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -192037,7 +192169,7 @@
                             ],
                             [
                                 "uili",
-                                "ADJ",
+                                "NOUN",
                                 "uile",
                                 null
                             ]
@@ -193343,22 +193475,28 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "doduthractar",
-                                "<unknown>",
-                                "<unknown>",
+                                "do",
+                                "PART",
+                                "do",
+                                null
+                            ],
+                            [
+                                "duthractar",
+                                "VERB",
+                                "dofuthraccair",
                                 null
                             ],
                             [
                                 "olcc",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "olc",
                                 null
                             ],
                             [
                                 "dunn",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=1|PronType=Prs"
                             ]
                         ],
                         "newGloss": null,
@@ -193383,39 +193521,27 @@
                         "glossText": "[in marg. sup.] (níd)at huili itfoirbthi",
                         "glossTokens": [
                             [
-                                "[in",
-                                "<unknown>",
-                                "<unknown>",
-                                null
-                            ],
-                            [
-                                "marg.",
-                                "<unknown>",
-                                "<unknown>",
-                                null
-                            ],
-                            [
-                                "sup.]",
-                                "<unknown>",
-                                "<unknown>",
-                                null
-                            ],
-                            [
-                                "(níd)at",
-                                "<unknown>",
-                                "<unknown>",
+                                "nídat",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "huili",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "uile",
                                 null
                             ],
                             [
-                                "itfoirbthi",
-                                "<unknown>",
-                                "<unknown>",
+                                "it",
+                                "AUX",
+                                "is",
+                                null
+                            ],
+                            [
+                                "foirbthi",
+                                "ADJ",
+                                "foirbthe",
                                 null
                             ]
                         ],
@@ -193445,27 +193571,33 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "isfollus",
-                                "<unknown>",
-                                "<unknown>",
+                                "is",
+                                "AUX",
+                                "is",
+                                null
+                            ],
+                            [
+                                "follus",
+                                "ADJ",
+                                "follus",
                                 null
                             ],
                             [
                                 "nandat",
-                                "<unknown>",
-                                "<unknown>",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "foirbthi",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADJ",
+                                "foirbthe",
                                 null
                             ],
                             [
                                 "uili",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "uile",
                                 null
                             ]
                         ],
@@ -193495,15 +193627,27 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "istualang",
-                                "<unknown>",
-                                "<unknown>",
+                                "is",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
-                                "forṅd(íten)",
-                                "<unknown>",
-                                "<unknown>",
+                                "tualang",
+                                "ADJ",
+                                "tualang",
+                                null
+                            ],
+                            [
+                                "for",
+                                "PRON",
+                                "far",
+                                "Number=Plur|Person=2|Poss=Yes|PronType=Prs"
+                            ],
+                            [
+                                "ṅdíten",
+                                "NOUN",
+                                "dítiu",
                                 null
                             ]
                         ],
@@ -193533,15 +193677,27 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "is(ni)ni",
-                                "<unknown>",
-                                "<unknown>",
+                                "i",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
+                                "sni",
+                                "PRON",
+                                "sní",
+                                "Number=Plur|Person=1|PronType=Prs"
+                            ],
+                            [
+                                "ni",
+                                "PRON",
+                                "ni",
+                                "Number=Plur|Person=1|PronType=Emp"
+                            ],
+                            [
                                 "torisnig",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADJ",
+                                "tairisnech",
                                 null
                             ]
                         ],
@@ -193552,7 +193708,7 @@
                             "c: according to Chroust, cf. taraisnech Ml. 58c 18, taraisnigte Ml. 39b 9, nantarasnigthi ‘nec confidendum,’ Ml. 144a 3",
                             "d: cf. Ml. 77c 1, 133d 7, 137a 3"
                         ],
-                        "newNotes": null,
+                        "newNotes": "According to Kavanagh (p. 735), though he quotes this example under the entry for the copula, which agrees with the translation provided in <em>Thesaurus Palaeohibernicus</em>, this interpretation “seems doubtful”. Instead, Kavanagh seems to prefer the interpretation that <em>is</em> represents the conjunction <em>os</em> “and”, and he translates “i.e. and we (being) trustful” (p. 736). Nevertheless, it is annotated as the copula here.",
                         "glossTrans": "i.e. it is we trustful<sup>d</sup>.",
                         "newTrans": null
                     },
@@ -193574,7 +193730,13 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "rocomalnisid",
+                                "ro",
+                                "PART",
+                                "ro",
+                                "PartType=Aug"
+                            ],
+                            [
+                                "comalnisid",
                                 "VERB",
                                 "comalnaithir",
                                 "Aspect=Perf|Mood=Ind|Number=Plur|Person=2|Tense=Past|Voice=Act"
@@ -193592,7 +193754,13 @@
                                 "PartType=Rel|PronType=Dem"
                             ],
                             [
-                                "nropridchissem",
+                                "nro",
+                                "PART",
+                                "ro",
+                                "PartType=Aug"
+                            ],
+                            [
+                                "pridchissem",
                                 "VERB",
                                 "pridchaid",
                                 "Aspect=Perf|Mood=Ind|Number=Plur|Person=1|Tense=Past|Voice=Act"
@@ -193776,16 +193944,22 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "guidmini",
-                                "<unknown>",
-                                "<unknown>",
+                                "guidmi",
+                                "VERB",
+                                "guidid",
                                 null
                             ],
                             [
+                                "ni",
+                                "PRON",
+                                "ni",
+                                "Number=Plur|Person=1|PronType=Emp"
+                            ],
+                            [
                                 "dúib",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=2|PronType=Prs"
                             ]
                         ],
                         "newGloss": null,
@@ -193808,9 +193982,15 @@
                         "glossText": "dofoigdi",
                         "glossTokens": [
                             [
-                                "dofoigdi",
-                                "<unknown>",
-                                "<unknown>",
+                                "do",
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "foigdi",
+                                "NOUN",
+                                "faigde",
                                 null
                             ]
                         ],
@@ -193836,9 +194016,15 @@
                         "glossText": "indutmall",
                         "glossTokens": [
                             [
-                                "indutmall",
-                                "<unknown>",
-                                "<unknown>",
+                                "ind",
+                                "DET",
+                                "a",
+                                null
+                            ],
+                            [
+                                "utmall",
+                                "NOUN",
+                                "utmall",
                                 null
                             ]
                         ],
@@ -193846,9 +194032,9 @@
                         "taggedNewGloss": null,
                         "glossFNs": "indutmall",
                         "footnotes": null,
-                        "newNotes": null,
+                        "newNotes": "The word <em>utmall</em> is generally an adjective, with a meaning like “unstable”, though its usage here cannot be adjectival. Kavanagh suggests that its usage in combination with the article is adverbial (p. 16, 907), meaning “restlessly, in a disorderly manner”. This is possible if it is taken as a gloss on the Latin <em>ambulante inordinate</em> “walking in disorder”. However, taking into account the broader context of the Latin line, <em>denuntiamus autem uobis fratres … ut subtraehatis uos ab omni fratre ambulante inordinate</em> “we caution you strongly, brothers … to withdraw yourselves from every brother who is walking in disorder”, it seems more plausible that it should be interpreted as a substantival use of the adjective in reference to those brothers who are walking in disorder, i.e. “the disorderly”. This interpretation is annotated here.",
                         "glossTrans": "No translation available in <em>Thesaurus Palaeohibernicus</em>.",
-                        "newTrans": null
+                        "newTrans": "The disorderly."
                     },
                     {
                         "tphPage": "667",
@@ -193869,39 +194055,51 @@
                             ],
                             [
                                 "ni",
-                                "<unknown>",
-                                "<unknown>",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "uainn",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADP",
+                                "ó",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=1|PronType=Prs"
+                            ],
+                            [
+                                "r",
+                                "PART",
+                                "ro",
                                 null
                             ],
                             [
-                                "raucsat",
-                                "<unknown>",
-                                "<unknown>",
+                                "a",
+                                "PRON",
+                                "a_2",
+                                "Gender=Neut|Number=Sing|Person=3|PronClass=A|PronType=Prs"
+                            ],
+                            [
+                                "ucsat",
+                                "VERB",
+                                "beirid",
                                 null
                             ],
                             [
                                 "ní",
-                                "<unknown>",
-                                "<unknown>",
+                                "PART",
+                                "ní",
                                 null
                             ],
                             [
                                 "accatar",
-                                "<unknown>",
-                                "<unknown>",
+                                "VERB",
+                                "adcí",
                                 null
                             ],
                             [
                                 "linn",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "la",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=1|PronType=Prs"
                             ]
                         ],
                         "newGloss": null,
@@ -193925,21 +194123,21 @@
                         "glossTokens": [
                             [
                                 "adib",
-                                "<unknown>",
-                                "<unknown>",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "éolig",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADJ",
+                                "éola",
                                 null
                             ],
                             [
                                 "and",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "i",
+                                "AdpType=Prep|Definite=Ind|Gender=Masc,Neut|Number=Sing|Person=3|PronType=Prs"
                             ]
                         ],
                         "newGloss": null,
@@ -193970,39 +194168,57 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "nongabthe",
-                                "<unknown>",
-                                "<unknown>",
+                                "no",
+                                "PART",
+                                "no",
+                                null
+                            ],
+                            [
+                                "ngabthe",
+                                "VERB",
+                                "gaibid",
                                 null
                             ],
                             [
                                 "desemrecht",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "desimrecht",
                                 null
                             ],
                             [
                                 "diínn",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADP",
+                                "de",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=1|PronType=Prs"
+                            ],
+                            [
+                                "ní",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
-                                "nínchruth",
-                                "<unknown>",
-                                "<unknown>",
+                                "n",
+                                "DET",
+                                "in",
+                                null
+                            ],
+                            [
+                                "chruth",
+                                "NOUN",
+                                "cruth",
                                 null
                             ],
                             [
                                 "hí",
-                                "<unknown>",
-                                "<unknown>",
+                                "PART",
+                                "í",
                                 null
                             ],
                             [
                                 "thall",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADV",
+                                "tall",
                                 null
                             ],
                             [
@@ -194013,14 +194229,14 @@
                             ],
                             [
                                 "non",
-                                "<unknown>",
-                                "<unknown>",
+                                "<Latin>",
+                                "",
                                 null
                             ],
                             [
                                 "inquiete",
-                                "<unknown>",
-                                "<unknown>",
+                                "<Latin>",
+                                "",
                                 null
                             ]
                         ],
@@ -194053,32 +194269,38 @@
                             ],
                             [
                                 "nírbommar",
-                                "<unknown>",
-                                "<unknown>",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "utmuill",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADJ",
+                                "utmall",
                                 null
                             ],
                             [
-                                "ocfoigdi",
-                                "<unknown>",
-                                "<unknown>",
+                                "oc",
+                                "ADP",
+                                "oc",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "foigdi",
+                                "NOUN",
+                                "faigde",
                                 null
                             ],
                             [
                                 "inter",
-                                "<unknown>",
-                                "<unknown>",
+                                "<Latin>",
+                                "",
                                 null
                             ],
                             [
                                 "uos",
-                                "<unknown>",
-                                "<unknown>",
+                                "<Latin>",
+                                "",
                                 null
                             ],
                             [
@@ -194089,14 +194311,14 @@
                             ],
                             [
                                 "nírbommar",
-                                "<unknown>",
-                                "<unknown>",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "tromdi",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADJ",
+                                "tromda",
                                 null
                             ]
                         ],
@@ -194128,9 +194350,15 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "indeolid",
-                                "<unknown>",
-                                "<unknown>",
+                                "in",
+                                "DET",
+                                "a",
+                                null
+                            ],
+                            [
+                                "deolid",
+                                "NOUN",
+                                "deolid",
                                 null
                             ]
                         ],
@@ -194140,7 +194368,7 @@
                         "footnotes": null,
                         "newNotes": null,
                         "glossTrans": "No translation available in <em>Thesaurus Palaeohibernicus</em>.",
-                        "newTrans": null
+                        "newTrans": "Gratuitously."
                     },
                     {
                         "tphPage": "667",
@@ -194154,21 +194382,51 @@
                         "glossText": "manisdeirclimmis dithorud arláam",
                         "glossTokens": [
                             [
-                                "manisdeirclimmis",
-                                "<unknown>",
-                                "<unknown>",
+                                "ma",
+                                "SCONJ",
+                                "má",
                                 null
                             ],
                             [
-                                "dithorud",
-                                "<unknown>",
-                                "<unknown>",
+                                "ni",
+                                "PART",
+                                "ní",
                                 null
                             ],
                             [
-                                "arláam",
-                                "<unknown>",
-                                "<unknown>",
+                                "s",
+                                "PRON",
+                                "s_1",
+                                "Gender=Fem|Number=Sing|Person=3|PronClass=A|PronType=Prs"
+                            ],
+                            [
+                                "deirclimmis",
+                                "VERB",
+                                "dooiclea",
+                                null
+                            ],
+                            [
+                                "di",
+                                "ADP",
+                                "de",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "thorud",
+                                "NOUN",
+                                "torad",
+                                null
+                            ],
+                            [
+                                "ar",
+                                "PRON",
+                                "ar",
+                                "Number=Plur|Person=1|Poss=Yes|PronType=Prs"
+                            ],
+                            [
+                                "láam",
+                                "NOUN",
+                                "lám",
                                 null
                             ]
                         ],
@@ -194193,32 +194451,44 @@
                         "glossTokens": [
                             [
                                 "dénum",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "dénum",
                                 null
                             ],
                             [
                                 "suainemun",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "súainem",
                                 null
                             ],
                             [
-                                "inaidchi",
-                                "<unknown>",
-                                "<unknown>",
+                                "i",
+                                "ADP",
+                                "i",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "naidchi",
+                                "NOUN",
+                                "adaig",
                                 null
                             ],
                             [
                                 "precept",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "precept",
                                 null
                             ],
                             [
-                                "fridei",
-                                "<unknown>",
-                                "<unknown>",
+                                "fri",
+                                "ADP",
+                                "fri",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "dei",
+                                "NOUN",
+                                "dia",
                                 null
                             ]
                         ],
@@ -194248,40 +194518,64 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "commimmis",
-                                "<unknown>",
-                                "<unknown>",
+                                "co",
+                                "SCONJ",
+                                "co",
+                                null
+                            ],
+                            [
+                                "mmimmis",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "angraib",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "angraib",
                                 null
                             ],
                             [
-                                "dúibsi",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "dúib",
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=2|PronType=Prs"
                             ],
                             [
-                                "dogabaal",
-                                "<unknown>",
-                                "<unknown>",
+                                "si",
+                                "PRON",
+                                "si",
+                                "Number=Plur|Person=2|PronType=Emp"
+                            ],
+                            [
+                                "do",
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "gabaal",
+                                "NOUN",
+                                "gabál",
                                 null
                             ],
                             [
                                 "desimrechta",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "desimrecht",
                                 null
                             ],
                             [
-                                "díinni",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "díin",
+                                "ADP",
+                                "de",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=1|PronType=Prs"
+                            ],
+                            [
+                                "ni",
+                                "PRON",
+                                "ni",
+                                "Number=Plur|Person=1|PronType=Emp"
                             ]
                         ],
                         "newGloss": null,
@@ -194306,16 +194600,28 @@
                         "glossText": "atbeirmis frib",
                         "glossTokens": [
                             [
-                                "atbeirmis",
-                                "<unknown>",
-                                "<unknown>",
+                                "a",
+                                "PART",
+                                "as",
+                                null
+                            ],
+                            [
+                                "t",
+                                "PRON",
+                                "t_3",
+                                "Gender=Neut|Number=Sing|Person=3|PronClass=B|PronType=Prs"
+                            ],
+                            [
+                                "beirmis",
+                                "VERB",
+                                "asbeir",
                                 null
                             ],
                             [
                                 "frib",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "fri",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=2|PronType=Prs"
                             ]
                         ],
                         "newGloss": null,
@@ -194344,22 +194650,34 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "issí",
-                                "<unknown>",
-                                "<unknown>",
+                                "is",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
-                                "apennit",
-                                "<unknown>",
-                                "<unknown>",
+                                "sí",
+                                "PRON",
+                                "sí",
+                                "Gender=Fem|Number=Sing|Person=3|PronType=Prs"
+                            ],
+                            [
+                                "a",
+                                "PRON",
+                                "a",
+                                "Gender=Masc,Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs"
+                            ],
+                            [
+                                "pennit",
+                                "NOUN",
+                                "pennait",
                                 null
                             ],
                             [
                                 "dé",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "PRON",
+                                "side",
+                                ""
                             ]
                         ],
                         "newGloss": null,
@@ -194382,34 +194700,40 @@
                         "glossText": "[in marg.] ↄammadarsa andígail forru .i. bot(h doib) cen biad ma(ni)... irgn...",
                         "glossTokens": [
                             [
-                                "[in",
-                                "<unknown>",
-                                "<unknown>",
+                                "ↄ",
+                                "PART",
+                                "con",
                                 null
                             ],
                             [
-                                "marg.]",
-                                "<unknown>",
-                                "<unknown>",
+                                "ammadar",
+                                "VERB",
+                                "conmidethar",
                                 null
                             ],
                             [
-                                "ↄammadarsa",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "sa",
+                                "PRON",
+                                "sa",
+                                "Number=Sing|Person=1|PronType=Emp"
                             ],
                             [
-                                "andígail",
-                                "<unknown>",
-                                "<unknown>",
+                                "a",
+                                "PRON",
+                                "a",
+                                "Number=Plur|Person=3|Poss=Yes|PronType=Prs"
+                            ],
+                            [
+                                "ndígail",
+                                "NOUN",
+                                "dígal",
                                 null
                             ],
                             [
                                 "forru",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "for",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=3|PronType=Prs"
                             ],
                             [
                                 ".i.",
@@ -194418,39 +194742,57 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "bot(h",
-                                "<unknown>",
-                                "<unknown>",
+                                "both",
+                                "NOUN",
+                                "both",
                                 null
                             ],
                             [
-                                "doib)",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "doib",
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=3|PronType=Prs"
                             ],
                             [
                                 "cen",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "cen",
+                                "AdpType=Prep|Definite=Ind"
                             ],
                             [
                                 "biad",
+                                "NOUN",
+                                "biad",
+                                null
+                            ],
+                            [
+                                "ma",
+                                "SCONJ",
+                                "má",
+                                null
+                            ],
+                            [
+                                "ni",
+                                "PART",
+                                "ní",
+                                null
+                            ],
+                            [
+                                "...",
+                                "PUNCT",
+                                "…",
+                                null
+                            ],
+                            [
+                                "irgn",
                                 "<unknown>",
                                 "<unknown>",
                                 null
                             ],
                             [
-                                "ma(ni)...",
-                                "<unknown>",
-                                "<unknown>",
-                                null
-                            ],
-                            [
-                                "irgn...",
-                                "<unknown>",
-                                "<unknown>",
+                                "...",
+                                "PUNCT",
+                                "…",
                                 null
                             ]
                         ],
@@ -194482,9 +194824,15 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "indualib",
-                                "<unknown>",
-                                "<unknown>",
+                                "ind",
+                                "DET",
+                                "a",
+                                null
+                            ],
+                            [
+                                "ualib",
+                                "NOUN",
+                                "úalib",
                                 null
                             ]
                         ],
@@ -194494,9 +194842,9 @@
                         "footnotes": [
                             "b: leg. indualchib ‘in vices’"
                         ],
-                        "newNotes": null,
+                        "newNotes": "Kavanagh suggests the dative singular form is used with the copula as an adverb, meaning “restlessly” (p. 901), but in the context of the Latin, <em>audiuimus enim inter uos quosdam ambulare inquiete</em>. “for we have heard that there are some among you who who are walking disruptively”, the more literal translation “the unquiet” would seem to make more sense.",
                         "glossTrans": "No translation available in <em>Thesaurus Palaeohibernicus</em>.",
-                        "newTrans": null
+                        "newTrans": "The unquiet."
                     },
                     {
                         "tphPage": "668",
@@ -194517,38 +194865,68 @@
                             ],
                             [
                                 "nip",
-                                "<unknown>",
-                                "<unknown>",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
-                                "arirlami",
-                                "<unknown>",
-                                "<unknown>",
+                                "ar",
+                                "ADP",
+                                "ar",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "irlami",
+                                "NOUN",
+                                "irlame",
                                 null
                             ],
                             [
                                 "far",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "PRON",
+                                "far",
+                                "Number=Plur|Person=2|Poss=Yes|PronType=Prs"
                             ],
                             [
                                 "cúrsagtha",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "cúrsagad",
                                 null
                             ],
                             [
-                                "manicloimmis",
-                                "<unknown>",
-                                "<unknown>",
+                                "ma",
+                                "SCONJ",
+                                "má",
                                 null
                             ],
                             [
-                                "forndrogscéla",
-                                "<unknown>",
-                                "<unknown>",
+                                "ni",
+                                "PART",
+                                "ní",
+                                null
+                            ],
+                            [
+                                "cloimmis",
+                                "VERB",
+                                "rocluinethar",
+                                null
+                            ],
+                            [
+                                "for",
+                                "PRON",
+                                "far",
+                                "Number=Plur|Person=2|Poss=Yes|PronType=Prs"
+                            ],
+                            [
+                                "ndrog",
+                                "ADJ",
+                                "droch",
+                                null
+                            ],
+                            [
+                                "scéla",
+                                "NOUN",
+                                "scél",
                                 null
                             ]
                         ],
@@ -194581,44 +194959,50 @@
                             ],
                             [
                                 "iarfigid",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "íarfigid",
                                 null
                             ],
                             [
                                 "dús",
-                                "<unknown>",
-                                "<unknown>",
+                                "SCONJ",
+                                "dús",
                                 null
                             ],
                             [
                                 "cia",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "PRON",
+                                "cía",
+                                "PronType=Int"
                             ],
                             [
                                 "port",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "port",
                                 null
                             ],
                             [
-                                "indib",
-                                "<unknown>",
-                                "<unknown>",
+                                "i",
+                                "ADP",
+                                "i",
+                                "AdpType=Prep|Definite=Ind|PronType=Rel"
+                            ],
+                            [
+                                "ndib",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "maith",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADJ",
+                                "maith",
                                 null
                             ],
                             [
                                 "óigedacht",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "oígedacht",
                                 null
                             ]
                         ],
@@ -194649,27 +195033,39 @@
                             ],
                             [
                                 "cen",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "cen",
+                                "AdpType=Prep|Definite=Ind"
                             ],
                             [
                                 "chuingid",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "cuingid",
                                 null
                             ],
                             [
-                                "neich,",
-                                "<unknown>",
-                                "<unknown>",
+                                "neich",
+                                "PRON",
+                                "nech",
+                                "Case=Gen|Gender=Masc|Number=Sing|PronType=Ind"
+                            ],
+                            [
+                                ",",
+                                "PUNCT",
+                                ",",
                                 null
                             ],
                             [
-                                "conech",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "co",
+                                "ADP",
+                                "co",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "nech",
+                                "PRON",
+                                "ní",
+                                "Case=Gen|Number=Sing|PronType=Ind"
                             ]
                         ],
                         "newGloss": null,
@@ -194699,8 +195095,8 @@
                             ],
                             [
                                 "cairigid",
-                                "<unknown>",
-                                "<unknown>",
+                                "VERB",
+                                "cairigidir",
                                 null
                             ]
                         ],
@@ -194731,63 +195127,93 @@
                             ],
                             [
                                 "duús",
-                                "<unknown>",
-                                "<unknown>",
+                                "SCONJ",
+                                "dús",
                                 null
                             ],
                             [
-                                "indip",
-                                "<unknown>",
-                                "<unknown>",
+                                "in",
+                                "PART",
+                                "in",
+                                null
+                            ],
+                            [
+                                "dip",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "fochunn",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "fochunn",
                                 null
                             ],
                             [
                                 "ícce",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "ícc",
                                 null
                             ],
                             [
                                 "do",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind|Gender=Masc,Neut|Number=Sing|Person=3|PronType=Prs"
+                            ],
+                            [
+                                "a",
+                                "PRON",
+                                "a",
+                                "Gender=Masc,Neut|Number=Sing|Person=3|Poss=Yes|PronType=Prs"
+                            ],
+                            [
+                                "indarpe",
+                                "NOUN",
+                                "indarpe",
                                 null
                             ],
                             [
-                                "aindarpe",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "a",
+                                "ADP",
+                                "a",
+                                "AdpType=Prep|Definite=Ind"
                             ],
                             [
-                                "aoentu",
-                                "<unknown>",
-                                "<unknown>",
+                                "oentu",
+                                "NOUN",
+                                "oentu",
                                 null
                             ],
                             [
                                 "fratrum",
-                                "<unknown>",
-                                "<unknown>",
+                                "<Latin>",
+                                "",
                                 null
                             ],
                             [
-                                "arisrucce",
-                                "<unknown>",
-                                "<unknown>",
+                                "ar",
+                                "SCONJ",
+                                "ar",
+                                null
+                            ],
+                            [
+                                "is",
+                                "AUX",
+                                "is",
+                                null
+                            ],
+                            [
+                                "rucce",
+                                "NOUN",
+                                "rucce",
                                 null
                             ],
                             [
                                 "dó",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind|Gender=Masc,Neut|Number=Sing|Person=3|PronType=Prs"
                             ]
                         ],
                         "newGloss": null,
@@ -194818,27 +195244,27 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "na",
-                                "<unknown>",
-                                "<unknown>",
-                                null
-                            ],
-                            [
-                                "bad",
-                                "<unknown>",
-                                "<unknown>",
+                                "na bad",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "naimtide",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADJ",
+                                "náimtide",
                                 null
                             ],
                             [
-                                "acosc",
-                                "<unknown>",
-                                "<unknown>",
+                                "a",
+                                "DET",
+                                "a",
+                                null
+                            ],
+                            [
+                                "cosc",
+                                "NOUN",
+                                "cosc",
                                 null
                             ]
                         ],
@@ -194868,9 +195294,21 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "nacoscid",
-                                "<unknown>",
-                                "<unknown>",
+                                "n",
+                                "PART",
+                                "no",
+                                null
+                            ],
+                            [
+                                "a",
+                                "PRON",
+                                "a_1",
+                                "Gender=Masc|Number=Sing|Person=3|PronClass=A|PronType=Prs"
+                            ],
+                            [
+                                "coscid",
+                                "VERB",
+                                "consecha",
                                 null
                             ]
                         ],
@@ -194900,28 +195338,40 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "ↄroib",
-                                "<unknown>",
-                                "<unknown>",
+                                "ↄ",
+                                "SCONJ",
+                                "co",
+                                null
+                            ],
+                            [
+                                "roib",
+                                "VERB",
+                                "attá",
                                 null
                             ],
                             [
                                 "core",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "córae",
                                 null
                             ],
                             [
                                 "dúib",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=2|PronType=Prs"
                             ],
                             [
-                                "fricách",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "fri",
+                                "ADP",
+                                "fri",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "cách",
+                                "PRON",
+                                "cách",
+                                "PronType=Ind"
                             ],
                             [
                                 "et",
@@ -194930,16 +195380,28 @@
                                 "Foreign=Yes"
                             ],
                             [
-                                "dochach",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "do",
+                                "ADP",
+                                "do",
+                                "AdpType=Prep|Definite=Ind"
                             ],
                             [
-                                "fribsi",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "chach",
+                                "PRON",
+                                "cách",
+                                "PronType=Ind"
+                            ],
+                            [
+                                "frib",
+                                "ADP",
+                                "fri",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=2|PronType=Prs"
+                            ],
+                            [
+                                "si",
+                                "PRON",
+                                "si",
+                                "Number=Plur|Person=2|PronType=Emp"
                             ]
                         ],
                         "newGloss": null,
@@ -194968,87 +195430,129 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "commad",
-                                "<unknown>",
-                                "<unknown>",
+                                "co",
+                                "SCONJ",
+                                "co",
+                                null
+                            ],
+                            [
+                                "mmad",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "in",
-                                "<unknown>",
-                                "<unknown>",
+                                "DET",
+                                "in",
                                 null
                             ],
                             [
                                 "so",
-                                "<unknown>",
-                                "<unknown>",
+                                "PART",
+                                "so",
                                 null
                             ],
                             [
                                 "sís",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADV",
+                                "sís",
                                 null
                             ],
                             [
-                                "roscribad",
-                                "<unknown>",
-                                "<unknown>",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "scribad",
+                                "VERB",
+                                "scríbaid",
                                 null
                             ],
                             [
                                 "som",
-                                "<unknown>",
-                                "<unknown>",
+                                "PRON",
+                                "som",
+                                "Gender=Masc,Neut|Number=Sing|Person=3|PronType=Emp"
+                            ],
+                            [
+                                "co",
+                                "SCONJ",
+                                "co",
                                 null
                             ],
                             [
-                                "combad",
-                                "<unknown>",
-                                "<unknown>",
+                                "mbad",
+                                "AUX",
+                                "is",
                                 null
                             ],
                             [
                                 "suaíchnid",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "súaichnid",
                                 null
                             ],
                             [
-                                "leosom",
-                                "<unknown>",
-                                "<unknown>",
-                                null
+                                "leo",
+                                "ADP",
+                                "la",
+                                "AdpType=Prep|Definite=Ind|Number=Plur|Person=3|PronType=Prs"
+                            ],
+                            [
+                                "som",
+                                "PRON",
+                                "som",
+                                "Number=Plur|Person=3|PronType=Emp"
                             ],
                             [
                                 "ataa",
-                                "<unknown>",
-                                "<unknown>",
+                                "VERB",
+                                "attá",
                                 null
                             ],
                             [
-                                "icach",
-                                "<unknown>",
-                                "<unknown>",
+                                "i",
+                                "ADP",
+                                "i",
+                                "AdpType=Prep|Definite=Ind"
+                            ],
+                            [
+                                "cach",
+                                "DET",
+                                "cach",
                                 null
                             ],
                             [
                                 "epistil",
-                                "<unknown>",
-                                "<unknown>",
+                                "NOUN",
+                                "epistil",
                                 null
                             ],
                             [
-                                "asainchomarde",
-                                "<unknown>",
-                                "<unknown>",
+                                "a",
+                                "DET",
+                                "a",
+                                null
+                            ],
+                            [
+                                "sain",
+                                "ADJ",
+                                "sain",
+                                null
+                            ],
+                            [
+                                "chomarde",
+                                "NOUN",
+                                "comarde",
                                 null
                             ],
                             [
                                 "sin",
-                                "<unknown>",
-                                "<unknown>",
+                                "PART",
+                                "sin",
                                 null
                             ]
                         ],
@@ -195078,15 +195582,21 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "inso",
-                                "<unknown>",
-                                "<unknown>",
+                                "in",
+                                "DET",
+                                "in",
+                                null
+                            ],
+                            [
+                                "so",
+                                "PART",
+                                "so",
                                 null
                             ],
                             [
                                 "sís",
-                                "<unknown>",
-                                "<unknown>",
+                                "ADV",
+                                "sís",
                                 null
                             ]
                         ],
@@ -217319,7 +217829,13 @@
                                 null
                             ],
                             [
-                                "robǽ",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "bǽ",
                                 "VERB",
                                 "attá",
                                 null
@@ -224218,7 +224734,13 @@
                                 null
                             ],
                             [
-                                "rochreitset",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "chreitset",
                                 "VERB",
                                 "creitid",
                                 null
@@ -224654,7 +225176,13 @@
                                 null
                             ],
                             [
-                                "roerpad",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "erpad",
                                 "VERB",
                                 "erbaid",
                                 null
@@ -227686,7 +228214,7 @@
                             [
                                 "pridchimme",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -229855,7 +230383,13 @@
                                 null
                             ],
                             [
-                                "roscrib",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "scrib",
                                 "VERB",
                                 "scríbaid",
                                 null
@@ -231802,7 +232336,13 @@
                                 null
                             ],
                             [
-                                "rofoided",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "foided",
                                 "VERB",
                                 "foídid",
                                 null
@@ -231878,7 +232418,13 @@
                                 "Abbr=Yes"
                             ],
                             [
-                                "rofetar",
+                                "ro",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "fetar",
                                 "VERB",
                                 "rofinnadar",
                                 null
@@ -235709,7 +236255,7 @@
                         "taggedNewGloss": null,
                         "glossFNs": "isnini firiónaib",
                         "footnotes": null,
-                        "newNotes": null,
+                        "newNotes": "According to Kavanagh (p. 735), though he quotes this example under the entry for the copula, which agrees with the translation provided in <em>Thesaurus Palaeohibernicus</em>, this interpretation “seems doubtful”. Instead, Kavanagh seems to prefer the interpretation that <em>is</em> represents the conjunction <em>os</em> “and”, and he translates “and we (being) righteous” (p. 736). Nevertheless, it is annotated as the copula here.",
                         "glossTrans": "it is we righteous.",
                         "newTrans": null
                     },
@@ -240136,7 +240682,7 @@
                             [
                                 "pridched",
                                 "VERB",
-                                "pridchid",
+                                "pridchaid",
                                 null
                             ],
                             [
@@ -241356,7 +241902,13 @@
                                 null
                             ],
                             [
-                                "rusamaltar",
+                                "ru",
+                                "PART",
+                                "ro",
+                                null
+                            ],
+                            [
+                                "samaltar",
                                 "VERB",
                                 "samlaither",
                                 null
