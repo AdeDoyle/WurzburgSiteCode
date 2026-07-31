@@ -2030,7 +2030,10 @@
         "tormach": null,
         "tormachtaid": null,
         "tosach": 41498,
-        "toschid": 41298,
+        "toschid": [
+            41298,
+            17683
+        ],
         "tossogod": 41499,
         "tosṅgachtigtheid": null,
         "toxal": null,
