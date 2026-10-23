@@ -1,0 +1,262 @@
+/* =====================================================
+   GLOBAL THEME
+=====================================================*/
+
+:root {
+    --brand-bg: #1c2541;
+    --brand-accent: #3a506b;
+    --brand-highlight: #5bc0be;
+    --brand-light: #e0fbfc;
+}
+
+body {
+    background: var(--brand-light);
+    font-family: "Inter", Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h5 {
+    color: var(--brand-bg);
+}
+
+/* =====================================================
+   NAVBAR
+=====================================================*/
+
+.navbar {
+    background: var(--brand-bg) !important;
+    border-bottom: 3px solid var(--brand-highlight);
+    padding: 0.5rem 1rem;
+}
+
+.navbar .brand-text {
+    color: var(--brand-light) !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.sorting-label {
+    color: var(--brand-light);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-right: 4px;
+    white-space: nowrap;
+}
+
+.logo-image {
+    height: 42px;
+    width: auto;
+    border-radius: 8px;
+    background: var(--brand-accent);
+    padding: 4px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2), -2px -2px 6px rgba(255,255,255,0.15);
+    filter: brightness(0.95);
+}
+
+/* =====================================================
+   NAVBAR TAB BUTTONS (SUBTLE NEUMORPHIC)
+=====================================================*/
+
+.tab-btn {
+    border: none;
+    border-radius: 12px;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--brand-light);
+    background: var(--brand-accent);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.15), -2px -2px 4px rgba(255,255,255,0.15);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+
+.tab-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.15), -3px -3px 6px rgba(255,255,255,0.15);
+    color: var(--brand-light);
+}
+
+.tab-btn.active {
+    background: var(--brand-highlight);
+    color: #000;
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.2), inset -4px -4px 8px rgba(255,255,255,0.15);
+}
+
+/* Slightly muted inactive buttons */
+.tab-btn:not(.active) {
+    opacity: 0.85;
+}
+
+/* =====================================================
+   SIDEBAR
+=====================================================*/
+
+.sidebar {
+    width: 240px;
+    background: var(--brand-bg);
+    color: var(--brand-light);
+    min-height: 100vh;
+    border-right: 3px solid var(--brand-highlight);
+    padding: 20px 15px;
+}
+
+.sidebar-title {
+    color: var(--brand-light);
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+}
+
+.sidebar-btn {
+    width: 100%;
+    text-align: left;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    background: var(--brand-accent);
+    border: none;
+    border-radius: 8px;
+    color: var(--brand-light);
+    font-weight: 500;
+    transition: background 0.2s, transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+.sidebar-btn:hover {
+    background: var(--brand-highlight);
+    color: #000;
+    transform: translateX(4px);
+}
+
+.sidebar-btn.active {
+    background: var(--brand-highlight);
+    color: #000;
+}
+
+/* =====================================================
+   LIST ITEMS
+=====================================================*/
+
+#list .list-group-item {
+    background: white;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    padding: 16px 20px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+#list .list-group-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* =====================================================
+   TITLE ROW
+=====================================================*/
+
+.title-row {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--brand-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.title-row:hover {
+    color: var(--brand-accent);
+}
+
+/* LEFT side (title text) */
+.title-row span:first-child {
+    flex: 1;
+}
+
+/* RIGHT side (date pill) */
+.title-date {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--brand-accent);
+    background: rgba(91, 192, 190, 0.15);
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+/* Arrow indicator */
+.title-row::after {
+    content: "▾";
+    font-size: 1.2rem;
+    color: var(--brand-accent);
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.details-box.show + .title-row::after,
+.title-row.open::after {
+    transform: rotate(180deg);
+}
+
+/* =====================================================
+   DETAILS BOX
+=====================================================*/
+
+.details-box {
+    background: var(--brand-light);
+    border-left: 4px solid var(--brand-highlight);
+    border-radius: 6px;
+    padding: 12px 15px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.details-box div {
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.details-box strong {
+    color: var(--brand-bg);
+}
+
+/* CODEX hyperlinks */
+.details-box a {
+    color: var(--brand-accent);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.details-box a:hover {
+    color: var(--brand-bg);
+    text-decoration: underline;
+}
+
+/* =====================================================
+   FLEX CONTAINER FOR MAIN LAYOUT
+=====================================================*/
+
+.d-flex {
+    display: flex;
+}
+
+.container.flex-grow-1 {
+    flex-grow: 1;
+    padding: 30px 20px;
+}
+
+
+/* =====================================================
+   DATE FALLBACK (UNSPECIFIED)
+=====================================================*/
+
+.title-date.unspecified {
+    opacity: 0.6;
+    font-style: italic;
+}

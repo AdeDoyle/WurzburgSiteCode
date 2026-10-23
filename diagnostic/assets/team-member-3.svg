@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="450" viewBox="0 0 360 450" role="img" aria-labelledby="title desc">
+<title id="title">Illustrated team portrait placeholder 3</title>
+<desc id="desc">A stylized illustrated avatar placeholder. Replace with an approved team photograph.</desc>
+<rect width="360" height="450" rx="18" fill="#1c2541"/>
+<circle cx="180" cy="154" r="82" fill="#f0c8a8"/>
+<path d="M98 155c-9-70 25-112 82-112 65 0 91 47 82 112l-13 34H111z" fill="#5bc0be"/>
+<path d="M122 163c4-43 25-70 58-70 38 0 58 28 60 70l-9 37c-11 30-30 48-51 48s-43-20-52-49z" fill="#f0c8a8"/>
+<path d="M91 450c3-94 33-144 89-144s86 50 89 144z" fill="#d9f4f3"/>
+<path d="M145 305l35 42 35-42" fill="#ffffff" opacity=".75"/>
+<circle cx="151" cy="164" r="5" fill="#1c2541"/><circle cx="210" cy="164" r="5" fill="#1c2541"/>
+<path d="M159 202q21 17 42 0" fill="none" stroke="#9d5e4b" stroke-width="4" stroke-linecap="round"/>
+<rect x="18" y="386" width="324" height="46" rx="12" fill="#1c2541" opacity=".88"/>
+<text x="180" y="416" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e0fbfc">NB</text>
+</svg>

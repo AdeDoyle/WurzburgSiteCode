@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document Viewer</title>
+
+<!-- Bootstrap CSS -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Header Bar -->
+<nav class="navbar navbar-light bg-light px-3 shadow-sm mb-4">
+    <a class="navbar-brand d-flex align-items-center" href="https://ahi.maynoothuniversity.ie/mind-material-middle-ages/di%E2%93%90gnostic-tracing-diatopic-variation-in-a-corpus-of-old-irish/research/">
+        <img src="DiAgnostic_logo.png" alt="Logo" class="logo-image me-2">
+        <span class="brand-text">Clavis Litterarvm Hibernensivm</span>
+    </a>
+
+    <div class="ms-auto d-flex align-items-center gap-2">
+    	<span class="sorting-label">Sorting:</span>
+        <button class="btn btn-outline-primary tab-btn active" data-mode="byTitle">Title</button>
+        <button class="btn btn-outline-primary tab-btn" data-mode="byDate">Date</button>
+        <button class="btn btn-outline-primary tab-btn" data-mode="byPage">Page</button>
+        <button class="btn btn-outline-primary tab-btn" data-mode="byEntry">Entry</button>
+    </div>
+</nav>
+
+<div class="container">
+    <div id="list" class="list-group">Loading...</div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- App Logic -->
+<script src="app.js"></script>
+
+</body>
+</html>
