@@ -72,27 +72,26 @@ body {
 
 .nav-btn {
   display: inline-block;
-  padding: .5rem 1rem;
-  border-radius: 12px;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 2px solid transparent;
   color: var(--brand-light);
-  background: var(--brand-accent);
-  box-shadow: 2px 2px 4px rgba(0,0,0,.15), -2px -2px 4px rgba(255,255,255,.1);
-  font-size: .95rem;
-  font-weight: 550;
+  background: transparent;
+  font-size: 0.95rem;
+  font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
-  transition: transform .18s ease, background .18s ease, color .18s ease;
+  transition: color 0.18s ease, border-color 0.18s ease;
 }
 
 .nav-btn:hover {
-  color: var(--brand-light);
-  transform: translateY(-1px);
-  background: #465f7c;
+  color: #ffffff;
+  border-bottom-color: var(--brand-highlight);
 }
 
 .nav-btn.active {
-  color: #10202d;
-  background: var(--brand-highlight);
+  color: #ffffff;
+  border-bottom-color: var(--brand-highlight);
+  background: transparent;
 }
 
 .page-content {
@@ -324,28 +323,22 @@ body {
 }
 
 .site-footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  min-height: 100px;
-  padding: 1.25rem;
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem clamp(1.5rem, 5vw, 4rem);
   margin-top: auto;
-  background: #fff;
-  border-top: 3px solid var(--brand-highlight);
-}
-
-.footer-note {
-  color: var(--muted-text);
-  font-size: .9rem;
+  background: #ffffff;
+  border-top: 1px solid var(--card-border);
 }
 
 .funding-logo {
   display: block;
-  width: auto;
-  max-width: 230px;
-  max-height: 54px;
+  width: 100%;
+  max-width: 190px;
+  height: 56px;
   object-fit: contain;
 }
 
@@ -382,6 +375,12 @@ body {
   .publication time { justify-self: start; }
   .pi-card { grid-template-columns: 1fr; }
   .pi-card > img { max-width: 180px; }
+  .site-footer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .funding-logo { max-width: 200px; }
 }
 
 
